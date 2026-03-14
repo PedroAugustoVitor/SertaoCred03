@@ -55,9 +55,9 @@ export default {
       })
     },
     copy: function () {
-      let bandeiras = this.cardFlag ? 'Elo e Amex' : 'MasterCard e Visa'
+      let flag = this.cardFlag ? 'Elo e Amex' : 'MasterCard e Visa'
       let e = `Simulador SertãoCred
-Bandeiras consideradas: ${bandeiras}
+Bandeiras consideradas: ${flag}
 Será cobrado no cartão: ${this.result.willCharge}.
 Você receberá: ${this.result.willReceive}.
 Ser${this.term > 1 ? "ão" : "á"} ${this.term} parcela${this.term > 1 ? "s" : ""} de ${this.result.portion}`
